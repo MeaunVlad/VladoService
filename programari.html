@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vlado Service - Programări</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #1f2937;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #fbbf24;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #1f2937;
+  color: white;
+}
+
+td, th {
+  padding: 10px;
+  text-align: center;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #1f2937;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #374151;
+}
+
+footer {
+  background-color: #1f2937;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+</style>
+</head>
+<body>
+  <header>
+    <h1>Vlado Service</h1>
+    <nav>
+      <a href="index.html">Acasă</a> |
+      <a href="servicii.html">Servicii</a> |
+      <a href="tarife.html">Tarife</a> |
+      <a href="programari.html">Programări</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+    <h2>Cere o programare</h2>
+    <p>
+      Completează formularul de mai jos. Într-un proiect real, datele ar fi trimise către un server.
+      Aici este doar HTML pentru prezentare.
+    </p>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Date client</legend>
+
+        <p>
+          <label for="nume">Nume și prenume:</label><br>
+          <input type="text" id="nume" name="nume" required>
+        </p>
+
+        <p>
+          <label for="telefon">Telefon:</label><br>
+          <input type="tel" id="telefon" name="telefon" placeholder="+373..." required>
+        </p>
+
+        <p>
+          <label for="email">Email (opțional):</label><br>
+          <input type="email" id="email" name="email">
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Date mașină</legend>
+
+        <p>
+          <label for="marca">Marcă:</label><br>
+          <input type="text" id="marca" name="marca" placeholder="ex: Toyota" required>
+        </p>
+
+        <p>
+          <label for="model">Model:</label><br>
+          <input type="text" id="model" name="model" placeholder="ex: Corolla" required>
+        </p>
+
+        <p>
+          <label for="an">An fabricație (opțional):</label><br>
+          <input type="number" id="an" name="an" min="1980" max="2026">
+        </p>
+
+        <p>
+          <label for="serviciu">Tip serviciu:</label><br>
+          <select id="serviciu" name="serviciu" required>
+            <option value="">-- alege --</option>
+            <option value="diagnoza">Diagnoză</option>
+            <option value="mentenanta">Mentenanță (ulei/filtre)</option>
+            <option value="frane">Frâne</option>
+            <option value="suspensie">Suspensie</option>
+            <option value="electrica">Electrică auto</option>
+            <option value="altul">Altul</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="data">Data dorită:</label><br>
+          <input type="date" id="data" name="data" required>
+        </p>
+
+        <p>
+          <label for="ora">Ora preferată:</label><br>
+          <input type="time" id="ora" name="ora" required>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Detalii problemă</legend>
+        <p>
+          <label for="mesaj">Descriere (sunete, erori, simptome):</label><br>
+          <textarea id="mesaj" name="mesaj" rows="6" cols="40" required></textarea>
+        </p>
+
+        <p>
+          <input type="checkbox" id="accept" name="accept" required>
+          <label for="accept">Confirm că datele sunt corecte (pentru proiect)</label>
+        </p>
+      </fieldset>
+
+      <p>
+        <button type="submit">Trimite cererea</button>
+        <button type="reset">Resetează</button>
+      </p>
+    </form>
+
+    <hr>
+    <p>
+      După prezentare, poți explica: „Acesta este un formular HTML cu fieldset/legend, input-uri, select și textarea.”
+    </p>
+  </main>
+
+  <footer>
+    <hr>
+    <p>&copy; 2026 Vlado Service</p>
+  </footer>
+</body>
+</html>
